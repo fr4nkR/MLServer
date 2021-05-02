@@ -38,17 +38,17 @@ def index():
             return redirect(url_for('download'))
     return render_template('index.html')
 
-@app.route('/', methods=['GET'])
-def train_my_model():
-    if 
+# @app.route('/', methods=['GET'])
+# def train_my_model():
+#     if 
 
-@app.route('/', methods=['GET'])
-def upload_data():
+# @app.route('/', methods=['GET'])
+# def upload_data():
 
 @app.route('/download', methods=['GET'])
 def download():
     return 'Download Page'
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
 
