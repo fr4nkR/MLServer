@@ -3,6 +3,8 @@ import torch
 import torch.nn as nn
 
 # Enter the desired model, this is an example model
+
+# def save_model():
 class Model(nn.Module):
     def __init__(self, n_input_features):
         super(Model, self).__init__()
@@ -19,8 +21,13 @@ model = Model(n_input_features=6)
 # Make sure to use .pth as the extension as that is the convention for pytorch.
 FILE = "model.pth"
 torch.save(model, FILE)
-model = torch.load(PATH)
-model.eval()
+# PATH = "saved/model.pth"
+# model = torch.load(PATH)
+# model.eval()
+
+if __name__ == '__main__':
+    print("saving model...")
+    # save_model()
 
 ########################################################################################
 # use this in case we want to save the state of the model.
