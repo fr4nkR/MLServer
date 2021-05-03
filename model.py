@@ -19,7 +19,7 @@ model = Model(n_input_features=6)
 
 # Enter the name of the file to which you will save the model. We need the model source code.
 # Make sure to use .pth as the extension as that is the convention for pytorch.
-FILE = "model.pth"
+FILE = "saved/model.pth"
 torch.save(model, FILE)
 # PATH = "saved/model.pth"
 # model = torch.load(PATH)
